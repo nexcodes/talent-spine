@@ -14,7 +14,7 @@ app.get("/", (c) => {
 app.use(
   "*", // or replace with "*" to enable cors for all routes
   cors({
-    origin: "http://localhost:3000", // replace with your origin
+    origin: ["http://localhost:3000" , "https://talent-spine-six.vercel.app"], // replace with your origin
     credentials: true,
   })
 );
